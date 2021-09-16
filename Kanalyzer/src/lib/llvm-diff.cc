@@ -488,7 +488,7 @@ string Statics(ModuleList &modules)
      getIntContent(small) + "; media :"  +  getIntContent(media) + "; large :"  +  getIntContent(large) + "; larger :"  +  getIntContent(larger)
      + "; verylarge :"  +  getIntContent(verylarge) + "; superlarge :"  +  getIntContent(superlarge) + "\n";
     
-    dump_buffer1(string(kernel_eddition) + ": "+content, "/cheq/Kanalyzer/data/result/cpscan-delBBInfo/Total-Func.txt");
+    //dump_buffer1(string(kernel_eddition) + ": "+content, "/CPscan/Kanalyzer/data/result/cpscan-delBBInfo/Total-Func.txt");
     return content;
     
 }
@@ -665,7 +665,7 @@ bool PatchAnalysis(string MKName, string FunName, std::map<llvm::Instruction*, i
 }
 
 void GetDeletedLines(std::map<int,int> MCSMap, std::vector<int>DeletedBBlist, Mapbbl KbasicBlockInfo,  Mapbbl FbasicBlockInfo, string analysisfile){   
-    string dumpfile = "/cheq/Kanalyzer/data/result/cpscan-delBBInfo/deleBBInfo" + (string)(kernel_eddition) + ".csv";
+    string dumpfile = "/CPscan/Kanalyzer/data/result/cpscan-delBBInfo/deleBBInfo" + (string)(kernel_eddition) + ".csv";
     if(DeletedBBlist.size() > 0){
         for(std::vector<int>::iterator iter= DeletedBBlist.begin();
           iter != DeletedBBlist.end(); iter++ ){
@@ -1813,7 +1813,7 @@ void Check_Deleted_Func( ModulePairList *modulepairlist,  GlobalContext *KGlobal
                 DeletedFunc ++;
         }
     }
-    dump_buffer1(string(kernel_eddition) + ": " + getIntContent(DeletedFunc), "/cheq/Kanalyzer/data/result/cpscan-delBBInfo/DeletedFunc.txt");
+    dump_buffer1(string(kernel_eddition) + ": " + getIntContent(DeletedFunc), "/CPscan/Kanalyzer/data/result/cpscan-delBBInfo/DeletedFunc.txt");
 }
 void Check_OMP( ModulePairList *modulepairlist,  GlobalContext *KGlobalCtx,  GlobalContext *FGlobalCtx)
 {    
@@ -1855,7 +1855,7 @@ void Check_OMP( ModulePairList *modulepairlist,  GlobalContext *KGlobalCtx,  Glo
         if(remove(Convertstr2char(staticsDir))==0)
             OP<<"delete sucessfully.";
     }
-    string dumpfile = "/cheq/Kanalyzer/data/result/cpscan-delBBInfo/deleBBInfo" + (string)(kernel_eddition) + ".csv";
+    string dumpfile = "/CPscan/Kanalyzer/data/result/cpscan-delBBInfo/deleBBInfo" + (string)(kernel_eddition) + ".csv";
     if (FILE *file = fopen(Convertstr2char(dumpfile), "r")){
         if(remove(Convertstr2char(dumpfile))==0)
             OP<<"delete sucessfully.";

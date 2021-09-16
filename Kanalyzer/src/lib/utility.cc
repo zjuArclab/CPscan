@@ -60,8 +60,6 @@ void ObtainFuncPairOfBCfile(map<string, string> PairOfBCfile)
         Module *ModuleKernel = MKernel.release();  
         // 遍历Module，获得Module中的每一个函数
         string BCContend = "";
-        // string BCpath = "/home/yjq/Fulirong/Tools/cheq/deadline-arm/code/FilterSC/Firm-BC//usbnet.bc";
-        // if(MFName == BCpath)
         for (Module::iterator f = ModuleFirmware->begin(), fe = ModuleFirmware->end(); 
                 f != fe; ++f) {
                 //curFuc++;

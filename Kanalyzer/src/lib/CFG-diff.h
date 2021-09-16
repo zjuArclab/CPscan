@@ -52,9 +52,9 @@ using namespace llvm;
 #define kernel_eddition "3-3-8"
 
 
-#define SourceCode_DIR "/cheq/Kanalyzer/data/sourceCode/linux-"
-#define SRC_DIR  "/cheq/Kanalyzer/src/"
-#define DATA_DIR  "/cheq/Kanalyzer/data/bcfs/"
+#define SourceCode_DIR "/CPscan/Kanalyzer/data/sourceCode/linux-"
+#define SRC_DIR  "/CPscan/Kanalyzer/src/"
+#define DATA_DIR  "/CPscan/Kanalyzer/data/bcfs/"
 
 
 

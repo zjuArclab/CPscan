@@ -30,7 +30,7 @@ add_library (AnalyzerStatic STATIC $<TARGET_OBJECTS:AnalyzerObj>)
 # Build executable.
 set (EXECUTABLE_OUTPUT_PATH ${ANALYZER_BINARY_DIR})
 
-link_directories (${ANALYZER_BINARY_DIR}/lib /home/yjq/Fulirong/Tools/cheq/boost/boost_1_72_0/stage/lib)
+link_directories (${ANALYZER_BINARY_DIR}/lib /CPscan/boost/boost_1_72_0/stage/lib)
 
 add_executable(kanalyzer ${AnalyzerSourceCodes})
 target_link_libraries(kanalyzer 
