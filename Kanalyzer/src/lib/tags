@@ -1,0 +1,635 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANALYZER_GLOBAL_H	Analyzer.h	2;"	d
+AddChild	llvm-diff.cc	/^void AddChild(bbl_info b, int childNo){$/;"	f
+AddressTakenFuncs	Analyzer.h	/^	FuncSet AddressTakenFuncs;$/;"	m	struct:GlobalContext
+AnalyzeDeleteSS	CFG-diff.cc	/^void AnalyzeDeleteSS(std::map<llvm::Instruction*, int> *deletedSSlistr,  std::map<int,int> *MCSMap,$/;"	f
+AnalyzelargeCFG	llvm-diff.cc	/^void *AnalyzelargeCFG(void *cmpParas)$/;"	f
+BB	CFG-diff.h	/^	BasicBlock *BB;$/;"	m	struct:BBNode
+BBErrMap	SecurityChecks.h	/^	typedef std::map<BasicBlock *, int> BBErrMap;$/;"	t	class:SecurityChecksPass
+BBErrMap	SensitiveCheck.h	/^	typedef std::map<BasicBlock *, int> BBErrMap;$/;"	t	class:SensitiveChecksPass
+BBLID	CFG-diff.h	/^    int BBLID;$/;"	m	struct:BBL_Info
+BBL_Info	CFG-diff.h	/^typedef struct BBL_Info{$/;"	s
+BBMap	CFG-diff.h	/^typedef std::map<BasicBlock *, BBNode *> BBMap;$/;"	t
+BBN	CFG-diff.h	/^	BBNode *BBN;$/;"	m	struct:UserNode
+BBNode	CFG-diff.h	/^struct BBNode {$/;"	s
+BBPairSet	CFG-diff.h	/^typedef std::set< std::pair<BBNode *, BasicBlock *> > BBPairSet;$/;"	t
+BCList	llvm-diff.cc	/^vector<string> BCList; $/;"	v
+BCName	CFG-diff.h	/^   string BCName; $/;"	m	struct:CmpParas
+BOOST_GRAPH_MCGREGOR_COMMON_SUBGRAPHS_HPP	MCS.cc	11;"	d	file:
+BOOST_GRAPH_MCGREGOR_COMMON_SUBGRAPHS_HPP	MCS.hpp	11;"	d
+BUFFERSIZE	CFG-diff.h	72;"	d
+Bits	Common.h	/^  const uint64_t Bits = 8;$/;"	m	class:ModuleOracle
+CALL_GRAPH_H	CallGraph.h	2;"	d
+CFGEdge	SecurityChecks.h	/^	typedef std::pair<Instruction *, BasicBlock *> CFGEdge;$/;"	t	class:SecurityChecksPass
+CFGEdge	SensitiveCheck.h	/^	typedef std::pair<Instruction *, BasicBlock *> CFGEdge;$/;"	t	class:SensitiveChecksPass
+CFG_diff	CFG-diff.h	56;"	d
+CMPtime	CFG-diff.h	/^    int CMPtime = 0;$/;"	m	struct:BBL_Info
+COMMON_H	Common.h	2;"	d
+CachedCorrespondenceMapFirstToSecond	MCS.cc	/^        CachedCorrespondenceMapFirstToSecond;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor	file:
+CachedCorrespondenceMapFirstToSecond	MCS.cc	/^        CachedCorrespondenceMapFirstToSecond;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+CachedCorrespondenceMapFirstToSecond	MCS.cc	/^        CachedCorrespondenceMapFirstToSecond;$/;"	t	struct:boost::detail::unique_subgraph_interceptor	file:
+CachedCorrespondenceMapFirstToSecond	MCS.hpp	/^        CachedCorrespondenceMapFirstToSecond;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor
+CachedCorrespondenceMapFirstToSecond	MCS.hpp	/^        CachedCorrespondenceMapFirstToSecond;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor
+CachedCorrespondenceMapFirstToSecond	MCS.hpp	/^        CachedCorrespondenceMapFirstToSecond;$/;"	t	struct:boost::detail::unique_subgraph_interceptor
+CachedCorrespondenceMapSecondToFirst	MCS.cc	/^        CachedCorrespondenceMapSecondToFirst;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor	file:
+CachedCorrespondenceMapSecondToFirst	MCS.cc	/^        CachedCorrespondenceMapSecondToFirst;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+CachedCorrespondenceMapSecondToFirst	MCS.cc	/^        CachedCorrespondenceMapSecondToFirst;$/;"	t	struct:boost::detail::unique_subgraph_interceptor	file:
+CachedCorrespondenceMapSecondToFirst	MCS.hpp	/^        CachedCorrespondenceMapSecondToFirst;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor
+CachedCorrespondenceMapSecondToFirst	MCS.hpp	/^        CachedCorrespondenceMapSecondToFirst;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor
+CachedCorrespondenceMapSecondToFirst	MCS.hpp	/^        CachedCorrespondenceMapSecondToFirst;$/;"	t	struct:boost::detail::unique_subgraph_interceptor
+CallGraphPass	CallGraph.h	/^		CallGraphPass(GlobalContext *Ctx_)$/;"	f	class:CallGraphPass
+CallGraphPass	CallGraph.h	/^class CallGraphPass : public IterativeModulePass {$/;"	c
+CallInstSet	Analyzer.h	/^typedef llvm::SmallPtrSet<llvm::CallInst*, 8> CallInstSet;$/;"	t
+CalleeMap	Analyzer.h	/^typedef DenseMap<CallInst *, FuncSet> CalleeMap;$/;"	t
+Callees	Analyzer.h	/^	CalleeMap Callees;$/;"	m	struct:GlobalContext
+CallerMap	Analyzer.h	/^typedef DenseMap<Function*, CallInstSet> CallerMap;$/;"	t
+Callers	Analyzer.h	/^	CallerMap Callers;$/;"	m	struct:GlobalContext
+Check	llvm-diff.cc	/^void Check(ModulePairList *modulepairlist,  GlobalContext *KGlobalCtx,  GlobalContext *FGlobalCtx)$/;"	f
+CheckDSS	CFG-diff.h	64;"	d
+CheckInstSets	Analyzer.h	/^	DenseMap<Function *, set<Value *>> CheckInstSets;$/;"	m	struct:GlobalContext
+Children	CFG-diff.h	/^typedef struct Children{$/;"	s
+ChildrenNode	CFG-diff.h	/^typedef struct Children *ChildrenNode;$/;"	t	typeref:struct:Children
+CmpParas	CFG-diff.h	/^struct CmpParas{$/;"	s
+CompareBCFiles	llvm-diff.cc	/^map<string, string> CompareBCFiles(vector<string> FirmwareBCList, vector<string> KernelBCList)$/;"	f
+CompareCFG	llvm-diff.cc	/^ void *CompareCFG(void *cmpParas)$/;"	f
+CompareConds	llvm-diff.cc	/^void CompareConds(Function *F, vector<Value*> FConds, Function *K, vector<Value*> KConds)$/;"	f
+CompareInst	CFG-diff.cc	/^double CompareInst(llvm::Instruction *Instk, llvm::Instruction *Instf){$/;"	f
+CompareTime	llvm-diff.cc	/^clock_t CompareTime;$/;"	v
+Completed_Flag	SecurityChecks.h	/^		Completed_Flag = 256,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Completed_Flag	SensitiveCheck.h	/^		Completed_Flag = 256,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+ConnectUserNodes	CFG-diff.cc	/^void UserGraph::ConnectUserNodes(BBNode *From, $/;"	f	class:UserGraph
+ContainCheck	CFG-diff.cc	/^void ContainCheck(bbl_info b) {$/;"	f
+Convertstr2char	llvm-diff.cc	/^char* Convertstr2char(string FirmwareAddr)$/;"	f
+CopyFuncs	Analyzer.h	/^	map<string, std::tuple<int8_t, int8_t, int8_t>> CopyFuncs;$/;"	m	struct:GlobalContext
+Counters	CFG-diff.cc	/^std::pair<int, vector<int>> Counters(vector<string> v, string e){$/;"	f
+Ctx	Analyzer.h	/^	GlobalContext *Ctx;$/;"	m	class:IterativeModulePass
+Ctx	SensitiveCheck.h	/^	GlobalContext *Ctx;$/;"	m	class:SensitiveChecksPass
+DL	CallGraph.h	/^		const DataLayout *DL;$/;"	m	class:CallGraphPass
+Data	CFG-diff.h	/^    int  Data;$/;"	m	struct:Children
+Data	CFG-diff.h	/^    int  Data;$/;"	m	struct:Parent
+Data	CFG-diff.h	/^    int  Data;$/;"	m	struct:Silibing
+DeleElem	CFG-diff.cc	/^void DeleElem(vector<int> *v, int e){$/;"	f
+DeleElem	CFG-diff.cc	/^void DeleElem(vector<string> v, string e){$/;"	f
+DeleSensitiveItem	CFG-diff.cc	/^void DeleSensitiveItem(map<llvm::Instruction*, int> *v, Instruction *I){$/;"	f
+DisconnectBBNodes	CFG-diff.cc	/^void UserGraph::DisconnectBBNodes(BBNode *From) {$/;"	f	class:UserGraph
+Dominate	CFG-diff.h	/^	bool Dominate(Value *A, Value *B, BasicBlock *BB) {$/;"	f	struct:UserGraph
+Dumper	Common.h	/^  Dumper() {}$/;"	f	class:Dumper
+Dumper	Common.h	/^class Dumper {$/;"	c
+ERR	Common.h	28;"	d
+ERRNO_MASK	SecurityChecks.cc	23;"	d	file:
+ERRNO_MASK	SensitiveCheck.cc	23;"	d	file:
+ERRNO_PREFIX	SecurityChecks.cc	22;"	d	file:
+ERRNO_PREFIX	SensitiveCheck.cc	22;"	d	file:
+ERRNO_TYPE	SecurityChecks.cc	31;"	d	file:
+ERRNO_TYPE	SensitiveCheck.cc	31;"	d	file:
+ERR_HANDLE_MASK	SecurityChecks.cc	27;"	d	file:
+ERR_HANDLE_MASK	SensitiveCheck.cc	27;"	d	file:
+ERR_RETURN_MASK	SecurityChecks.cc	26;"	d	file:
+ERR_RETURN_MASK	SensitiveCheck.cc	26;"	d	file:
+Edge	CFG-diff.h	/^typedef boost::graph_traits<Graph>::edge_descriptor Edge;$/;"	t
+EdgeErrMap	SecurityChecks.h	/^	typedef std::map<CFGEdge, int> EdgeErrMap;$/;"	t	class:SecurityChecksPass
+EdgeErrMap	SensitiveCheck.h	/^	typedef std::map<CFGEdge, int> EdgeErrMap;$/;"	t	class:SensitiveChecksPass
+EdgeNameMap	CFG-diff.h	/^typedef property_map<Graph, edge_name_t>::type EdgeNameMap;$/;"	t
+EdgeValue	SecurityChecks.h	/^	typedef std::pair<CFGEdge, Value *> EdgeValue;$/;"	t	class:SecurityChecksPass
+EdgeValue	SensitiveCheck.h	/^	typedef std::pair<CFGEdge, Value *> EdgeValue;$/;"	t	class:SensitiveChecksPass
+Element	CFG-diff.h	/^	Element() {$/;"	f	struct:Element
+Element	CFG-diff.h	/^	Element(Element *Ele) {$/;"	f	struct:Element
+Element	CFG-diff.h	/^	Element(Value *Alloc, const DataLayout *DL) {$/;"	f	struct:Element
+Element	CFG-diff.h	/^struct Element {$/;"	s
+ErrFlag	SecurityChecks.h	/^	enum ErrFlag {$/;"	g	class:SecurityChecksPass
+ErrFlag	SensitiveCheck.h	/^	enum ErrFlag {$/;"	g	class:SensitiveChecksPass
+ErrSelectInstSet	SecurityChecks.h	/^	static set<Instruction *>ErrSelectInstSet;$/;"	m	class:SecurityChecksPass
+ErrSelectInstSet	SensitiveCheck.h	/^	static set<Instruction *>ErrSelectInstSet;$/;"	m	class:SensitiveChecksPass
+ErrorHandleFuncs	Analyzer.h	/^	set<string> ErrorHandleFuncs;$/;"	m	struct:GlobalContext
+F	CFG-diff.h	/^    llvm::Function *F;$/;"	m	struct:sensitive_info_of_function
+F	CFG-diff.h	/^   Function *F; $/;"	m	struct:CmpParas
+FGlobalCtx	Analyzer.cc	/^GlobalContext KGlobalCtx, FGlobalCtx;$/;"	v
+FGlobalCtx	CFG-diff.h	/^   struct GlobalContext *FGlobalCtx;$/;"	m	struct:CmpParas	typeref:struct:CmpParas::GlobalContext
+Feature	CFG-diff.h	/^typedef std::tuple< int, vector<int>, vector<string>,vector<int>,  vector<int>,  vector<string>>  Feature;$/;"	t
+Filter	llvm-diff.cc	/^string Filter(string BBContend){$/;"	f
+FindParent_sibling	llvm-diff.cc	/^void FindParent_sibling(Mapbbl basicBlockInfo){$/;"	f
+FirstBBN	CFG-diff.h	/^	BBNode *FirstBBN;$/;"	m	struct:UserGraph
+FirstNameProperty	CFG-diff.h	/^typedef property<first_index_t, std::string> FirstNameProperty;$/;"	t
+FirstUN	CFG-diff.h	/^	UserNode *FirstUN;$/;"	m	struct:UserGraph
+FuncSet	Analyzer.h	/^typedef llvm::SmallPtrSet<llvm::Function*, 8> FuncSet;$/;"	t
+GenerateDeletedSo	CFG-diff.cc	/^void GenerateDeletedSo(set<int> SScfgk,std::queue<int>kcommon_subgraph,std::vector<int> kcommon_node,Mapbbl KbasicBlockInfo,std::vector<int> remain_graph1,$/;"	f
+GetBasicBlock	CFG-diff.h	/^	BasicBlock *GetBasicBlock(Value *V) {$/;"	f	struct:UserGraph
+GetReachableBBs	CFG-diff.cc	/^void UserGraph::GetReachableBBs(Value *V, $/;"	f	class:UserGraph
+GlobalContext	Analyzer.h	/^	GlobalContext() {$/;"	f	struct:GlobalContext
+GlobalContext	Analyzer.h	/^struct GlobalContext {$/;"	s
+GlobalFuncs	Analyzer.h	/^	NameFuncMap GlobalFuncs;$/;"	m	struct:GlobalContext
+Graph	CFG-diff.h	/^    property<edge_name_t, std::string> > Graph;$/;"	t
+HeapAllocFuncs	Analyzer.h	/^	std::set<std::string> HeapAllocFuncs;$/;"	m	struct:GlobalContext
+Helper	Common.h	/^class Helper {$/;"	c
+ID	Analyzer.h	/^	const char * ID;$/;"	m	class:IterativeModulePass
+ID	SensitiveCheck.h	/^	const char * ID;$/;"	m	class:SensitiveChecksPass
+IdenticalInst	CFG-diff.h	/^typedef std::tuple<std::pair<llvm::Instruction*, int>,std::pair<llvm::Instruction*, int>, int> IdenticalInst;$/;"	t
+IdenticalShortInst	CFG-diff.cc	/^bool IdenticalShortInst(ShortInst e1, ShortInst e2){$/;"	f
+IndirectCallInsts	Analyzer.h	/^	std::vector<CallInst *>IndirectCallInsts;$/;"	m	struct:GlobalContext
+IndsertSibling	llvm-diff.cc	/^void IndsertSibling(SilbingNode  silbingList, int it, vector<int> children){$/;"	f
+InitBBL	llvm-diff.cc	/^bbl_info InitBBL(){$/;"	f
+InitFuncs	Analyzer.h	/^	std::map<std::string, std::pair<uint8_t, int8_t>> InitFuncs;$/;"	m	struct:GlobalContext
+Insert	CFG-diff.cc	/^void BBNode::Insert(UserNode *UN) {$/;"	f	class:BBNode
+InsertParent	llvm-diff.cc	/^void InsertParent(ParentNode parentList, int parentID){$/;"	f
+InstCMPThreshhod	CFG-diff.h	68;"	d
+InstRaioThreshhod	CFG-diff.h	67;"	d
+Instructions	CFG-diff.h	/^    vector<llvm::Instruction*> Instructions;$/;"	m	struct:BBL_Info
+InstsequenceSimilarity	CFG-diff.cc	/^double InstsequenceSimilarity(vector<string> KInstSequence,vector<string> FInstSequence){$/;"	f
+Int8PtrTy	CallGraph.h	/^		Type *Int8PtrTy;$/;"	m	class:CallGraphPass
+IntPtrTy	CallGraph.h	/^		Type *IntPtrTy;$/;"	m	class:CallGraphPass
+InvolvedModules	Analyzer.h	/^	set<string> InvolvedModules;$/;"	m	struct:GlobalContext
+IsInMCS	CFG-diff.cc	/^Instruction* IsInMCS(std::map<int,int> *MCSMap, int BBIDk, Instruction *intk,  Mapbbl *FbasicBlockInfo){$/;"	f
+IsSecurityCheck	SensitiveCheck.cc	/^bool SensitiveChecksPass::IsSecurityCheck(Function *F, Instruction *I) {$/;"	f	class:SensitiveChecksPass
+IsSecurityCheck	llvm-diff.cc	/^bool IsSecurityCheck(Function *F, Instruction *I) {$/;"	f
+IsSecurityCheckStopExe	llvm-diff.cc	/^bool IsSecurityCheckStopExe(Function *F, Instruction *I){$/;"	f
+IsSensitive	CFG-diff.cc	/^int IsSensitive(llvm::BasicBlock *bbl,  GlobalContext *GlobalCtx){$/;"	f
+Is_element_in_stingvector	CFG-diff.cc	/^bool Is_element_in_stingvector(multimap<std::string, std::string> PairsFuncs,string element){$/;"	f
+Is_element_in_vector	CFG-diff.cc	/^bool Is_element_in_vector(std::vector<int> v,int element){$/;"	f
+Is_element_in_vector	CFG-diff.cc	/^bool Is_element_in_vector(std::vector<string> v,string element){$/;"	f
+IterativeModulePass	Analyzer.h	/^	IterativeModulePass(GlobalContext *Ctx_, const char *ID_)$/;"	f	class:IterativeModulePass
+IterativeModulePass	Analyzer.h	/^class IterativeModulePass {$/;"	c
+K	CFG-diff.h	/^   Function *K; $/;"	m	struct:CmpParas
+KBLU	Common.h	40;"	d
+KCYN	Common.h	42;"	d
+KGRN	Common.h	38;"	d
+KGlobalCtx	Analyzer.cc	/^GlobalContext KGlobalCtx, FGlobalCtx;$/;"	v
+KGlobalCtx	CFG-diff.h	/^   struct GlobalContext *KGlobalCtx; $/;"	m	struct:CmpParas	typeref:struct:CmpParas::GlobalContext
+KMAG	Common.h	41;"	d
+KNRM	Common.h	36;"	d
+KRED	Common.h	37;"	d
+KWHT	Common.h	43;"	d
+KYEL	Common.h	39;"	d
+LINUX_SOURCE	Common.cc	18;"	d	file:
+LOG	Common.h	17;"	d
+LoadStaticData	Analyzer.cc	/^void LoadStaticData(GlobalContext *GCtx) {$/;"	f
+LockFuncs	Analyzer.h	/^	std::multimap<std::string, std::string> LockFuncs;$/;"	m	struct:GlobalContext
+MAX_BLOCKS_SUPPORT	Config.h	18;"	d
+Mapbbl	CFG-diff.h	/^typedef std::map<int,bbl_info> Mapbbl;$/;"	t
+MatchBB	CFG-diff.cc	/^Instruction* MatchBB(std::map<int,int> *MCSMap, int BBIDk, Instruction *intk,  Mapbbl *FbasicBlockInfo){$/;"	f
+May_Handle_Err	SecurityChecks.h	/^		May_Handle_Err = 32,$/;"	e	enum:SecurityChecksPass::ErrFlag
+May_Handle_Err	SensitiveCheck.h	/^		May_Handle_Err = 32,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+May_Return_Err	SecurityChecks.h	/^		May_Return_Err = 2,$/;"	e	enum:SecurityChecksPass::ErrFlag
+May_Return_Err	SensitiveCheck.h	/^		May_Return_Err = 2,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+MergeUsers	CFG-diff.cc	/^void UserGraph::MergeUsers(Value *V, Element *Ele, $/;"	f	class:UserGraph
+Missing_Instructions	CFG-diff.cc	/^void Missing_Instructions(llvm::BasicBlock *bblk, llvm::BasicBlock *bblf){$/;"	f
+ModuleList	Analyzer.h	/^typedef vector< pair<llvm::Module*, llvm::StringRef> > ModuleList;$/;"	t
+ModuleList	llvm-diff.h	/^typedef vector< pair<llvm::Module*, llvm::StringRef> > ModuleList;$/;"	t
+ModuleMaps	Analyzer.h	/^	ModuleNameMap ModuleMaps;$/;"	m	struct:GlobalContext
+ModuleNameMap	Analyzer.h	/^typedef std::unordered_map<llvm::Module*, llvm::StringRef> ModuleNameMap;$/;"	t
+ModuleNameMap	llvm-diff.h	/^typedef std::unordered_map<llvm::Module*, llvm::StringRef> ModuleNameMap;$/;"	t
+ModuleOracle	Common.h	/^  ModuleOracle(Module &m) :$/;"	f	class:ModuleOracle
+ModuleOracle	Common.h	/^class ModuleOracle {$/;"	c
+ModulePairList	Analyzer.h	/^typedef vector< pair<llvm::Module*, llvm::Module*> > ModulePairList;$/;"	t
+ModulePairList	llvm-diff.h	/^typedef vector< pair<llvm::Module*, llvm::Module*> > ModulePairList;$/;"	t
+Modules	Analyzer.h	/^	ModuleList  Modules;$/;"	m	struct:GlobalContext
+Must_Handle_Err	SecurityChecks.h	/^		Must_Handle_Err = 16,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Must_Handle_Err	SensitiveCheck.h	/^		Must_Handle_Err = 16,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+Must_Return_Err	SecurityChecks.h	/^		Must_Return_Err = 1,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Must_Return_Err	SensitiveCheck.h	/^		Must_Return_Err = 1,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+MyGraphType	CFG-diff.h	/^                         FirstNameProperty> MyGraphType;$/;"	t
+NameFuncMap	Analyzer.h	/^typedef std::unordered_map<string, llvm::Function*> NameFuncMap;$/;"	t
+Next	CFG-diff.h	/^    ChildrenNode Next;$/;"	m	struct:Children
+Next	CFG-diff.h	/^    ParentNode Next;$/;"	m	struct:Parent
+Next	CFG-diff.h	/^    SilbingNode Next;$/;"	m	struct:Silibing
+NotIdenticalFunc	llvm-diff.cc	/^int NotIdenticalFunc = 0;$/;"	v
+NumCondStatements	Analyzer.h	/^	unsigned NumCondStatements;$/;"	m	struct:GlobalContext
+NumSecurityChecks	Analyzer.h	/^	unsigned NumSecurityChecks;$/;"	m	struct:GlobalContext
+OP	Common.h	24;"	d
+ObtainBBID	CFG-diff.cc	/^int ObtainBBID(BasicBlock *BB , Mapbbl *KbasicBlockInfo){$/;"	f
+ObtainBCList	llvm-diff.cc	/^vector<string> ObtainBCList(char *basePath)$/;"	f
+ObtainCandicateVetex	CFG-diff.cc	/^std::map<int,int>  ObtainCandicateVetex(std::map<int,int> *relatedvetex , int type ){$/;"	f
+ObtainChildrenList	CFG-diff.cc	/^vector<int> ObtainChildrenList(bbl_info b){$/;"	f
+ObtainConds	llvm-diff.cc	/^vector<Value*> ObtainConds(Function *F)$/;"	f
+ObtainFuncPairOfBCfile	llvm-diff.cc	/^void ObtainFuncPairOfBCfile(map<string, string> PairOfBCfile)$/;"	f
+ObtainPairOfBCfile	llvm-diff.cc	/^map<string, string> ObtainPairOfBCfile(char *FirmwareBCDir, char *KernelBCDir)$/;"	f
+ObtainParentList	CFG-diff.cc	/^vector<int> ObtainParentList(bbl_info b){$/;"	f
+ObtainRelatedVetex	CFG-diff.cc	/^std::map<int,int>  ObtainRelatedVetex(bbl_info b, std::vector<int> common_node ){$/;"	f
+ObtainRemainVetex	CFG-diff.cc	/^std::vector<int> ObtainRemainVetex(std::vector<int> remain_graph, std::map<int,int> relatedvetex){$/;"	f
+ObtainSilbingList	CFG-diff.cc	/^vector<int> ObtainSilbingList(bbl_info b){$/;"	f
+ObtainUseSeq	CFG-diff.cc	/^vector<std::pair<Value*, Instruction*>> ObtainUseSeq(Value *operand){ $/;"	f
+Obtainchildren	llvm-diff.cc	/^vector<int>  Obtainchildren(ChildrenNode childList){$/;"	f
+ObtainsensitiveBBLset	CFG-diff.cc	/^ std::pair<Sensitive_Info_of_Functions*, std::set<int>> ObtainsensitiveBBLset(Mapbbl *basicBlockInfo, std::vector<int> common_node){$/;"	f
+PairFuncs	Analyzer.h	/^	std::multimap<std::string, std::string> PairFuncs;$/;"	m	struct:GlobalContext
+Parent	CFG-diff.h	/^typedef struct Parent{$/;"	s
+ParentNode	CFG-diff.h	/^typedef struct Parent *ParentNode;$/;"	t	typeref:struct:Parent
+PraseCond	llvm-diff.cc	/^void PraseCond(ICmpInst *IC)$/;"	f
+PraseInst	llvm-diff.cc	/^void PraseInst(Instruction *I){$/;"	f
+Print	llvm-diff.cc	/^void Print(Mapbbl basicBlockInfo){$/;"	f
+PrintGraph	CFG-diff.cc	/^void UserGraph::PrintGraph(Value *V) {$/;"	f	class:UserGraph
+PrintMCS	CFG-diff.cc	/^void PrintMCS(std::map<int,int> *MCSMap){$/;"	f
+PrintResults	Analyzer.cc	/^void PrintResults(GlobalContext *GCtx) {$/;"	f
+PrintSet	CFG-diff.cc	/^ void PrintSet(set<int> s){$/;"	f
+PrintUseSeq	CFG-diff.cc	/^void PrintUseSeq( vector<vector<std::pair<Value*,Instruction*>>>  UseSeq){$/;"	f
+PrintUseSeq	CFG-diff.cc	/^void PrintUseSeq(vector<vector<Instruction*>> UseSeq){$/;"	f
+PrintUserNode	CFG-diff.cc	/^void UserGraph::PrintUserNode(UserNode *UN, $/;"	f	class:UserGraph
+PrintVectorI	CFG-diff.cc	/^void PrintVectorI(vector<int> v){$/;"	f
+PrintVectorS	CFG-diff.cc	/^void PrintVectorS(vector<string> v){$/;"	f
+Print_Sensitive_Info_of_Functions	llvm-diff.cc	/^void Print_Sensitive_Info_of_Functions(vector<Sensitive_Info_of_Functions*> v){$/;"	f
+PrinteDSO	CFG-diff.cc	/^void PrinteDSO(map<llvm::Instruction*, int> v, Mapbbl KbasicBlockInfo){$/;"	f
+Printmap	CFG-diff.cc	/^void Printmap(map<llvm::Instruction*, int> v){$/;"	f
+PrintmapII	CFG-diff.cc	/^void PrintmapII(std::map<int,int>  s){$/;"	f
+ProcessResults	Analyzer.cc	/^void ProcessResults(GlobalContext *GCtx) {$/;"	f
+PutUserInBB	CFG-diff.cc	/^void UserGraph::PutUserInBB(Value *V, Element *Ele, $/;"	f	class:UserGraph
+RECORD	CFG-diff.h	65;"	d
+RecordBCFiles	llvm-diff.cc	/^void RecordBCFiles(char *basePath, vector<string> BCList)$/;"	f
+RecordLog	CFG-diff.cc	/^void RecordLog(char* local_msg, string logs, string filename)$/;"	f
+RecordLog	CFG-diff.cc	/^void RecordLog(char* local_msg, string logs, string filename, pthread_mutex_t *mutex)$/;"	f
+Reserved_Handle1	SecurityChecks.h	/^		Reserved_Handle1 = 64,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Reserved_Handle1	SensitiveCheck.h	/^		Reserved_Handle1 = 64,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+Reserved_Handle2	SecurityChecks.h	/^		Reserved_Handle2 = 128,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Reserved_Handle2	SensitiveCheck.h	/^		Reserved_Handle2 = 128,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+Reserved_Return1	SecurityChecks.h	/^		Reserved_Return1 = 4,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Reserved_Return1	SensitiveCheck.h	/^		Reserved_Return1 = 4,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+Reserved_Return2	SecurityChecks.h	/^		Reserved_Return2 = 8,$/;"	e	enum:SecurityChecksPass::ErrFlag
+Reserved_Return2	SensitiveCheck.h	/^		Reserved_Return2 = 8,$/;"	e	enum:SensitiveChecksPass::ErrFlag
+SACONFIG_H	Config.h	2;"	d
+SCBranch	Common.h	/^  Value *SCBranch;        \/* Branch associated to the check *\/$/;"	m	class:SecurityCheck
+SCheck	Common.h	/^  Value *SCheck;          \/* Security check of this critical variable *\/$/;"	m	class:SecurityCheck
+SCheckFileName	Common.h	/^  string SCheckFileName; \/* Source file name of security check *\/$/;"	m	class:SecurityCheck
+SCheckLineNo	Common.h	/^  unsigned SCheckLineNo;  \/* Line number of security check *\/$/;"	m	class:SecurityCheck
+SECURITY_CHECKS_H	SecurityChecks.h	2;"	d
+SECURITY_CHECKS_H	SensitiveCheck.h	2;"	d
+Searchqueue	CFG-diff.cc	/^bool Searchqueue(std::queue<Value*> q, Value *x)$/;"	f
+SecurityCheck	Common.h	/^  SecurityCheck(Value *sk, Value *br) : SCheck(sk), SCBranch(br) {$/;"	f	class:SecurityCheck
+SecurityCheck	Common.h	/^class SecurityCheck {$/;"	c
+SecurityCheckSets	Analyzer.h	/^	DenseMap<Function *, set<SecurityCheck>> SecurityCheckSets;$/;"	m	struct:GlobalContext
+SecurityChecksPass	SecurityChecks.h	/^	SecurityChecksPass(GlobalContext *Ctx_)$/;"	f	class:SecurityChecksPass
+SecurityChecksPass	SecurityChecks.h	/^class SecurityChecksPass : public IterativeModulePass {$/;"	c
+SensitiveChecksPass	SensitiveCheck.h	/^	SensitiveChecksPass(GlobalContext *Ctx_, const char *ID_)$/;"	f	class:SensitiveChecksPass
+SensitiveChecksPass	SensitiveCheck.h	/^class SensitiveChecksPass {$/;"	c
+Sensitive_Info	CFG-diff.h	/^    map<llvm::Instruction*, int> Sensitive_Info; \/\/ 定义一个基本块中是否含有敏感指令$/;"	m	struct:BBL_Info
+Sensitive_Info_of_Functions	CFG-diff.h	/^}Sensitive_Info_of_Functions;$/;"	t	typeref:struct:sensitive_info_of_function
+SetCopyFuncs	Config.h	/^static void SetCopyFuncs($/;"	f
+SetErrorHandleFuncs	Config.h	/^static void SetErrorHandleFuncs(set<string> &ErrorHandleFuncs) {$/;"	f
+SetHeapAllocFuncs	Config.h	/^static void SetHeapAllocFuncs($/;"	f
+SetInitFuncs	Config.h	/^static void SetInitFuncs($/;"	f
+SetLockFuncs	Config.h	/^static void SetLockFuncs(multimap<std::string, std::string> &LockFuncs){$/;"	f
+SetPairFuncs	Config.h	/^static void SetPairFuncs(multimap<std::string, std::string> &PairsFuncs){$/;"	f
+ShortInst	CFG-diff.h	/^typedef std::pair<int,vector<string>> ShortInst;$/;"	t
+SigMatch	CFG-diff.cc	/^SigMatchResult SigMatch(bbl_info rk, bbl_info rf){$/;"	f
+SigMatchResult	CFG-diff.h	/^typedef std::tuple<double, vector<IdenticalInst>, map<llvm::Instruction*, int>, float> SigMatchResult;$/;"	t
+SilbingNode	CFG-diff.h	/^typedef struct Silibing *SilbingNode;$/;"	t	typeref:struct:Silibing
+Silibing	CFG-diff.h	/^typedef struct Silibing{$/;"	s
+SizeofLargeCFG	CFG-diff.h	58;"	d
+Statics	llvm-diff.cc	/^void Statics(ModuleList &modules)$/;"	f
+SubGraph	MCS.cc	/^                  CachedCorrespondenceMapSecondToFirst> > SubGraph;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor	file:
+SubGraph	MCS.cc	/^                  CachedCorrespondenceMapSecondToFirst> > SubGraph;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+SubGraph	MCS.cc	/^                  CachedCorrespondenceMapSecondToFirst> > SubGraph;$/;"	t	struct:boost::detail::unique_subgraph_interceptor	file:
+SubGraph	MCS.hpp	/^                  CachedCorrespondenceMapSecondToFirst> > SubGraph;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor
+SubGraph	MCS.hpp	/^                  CachedCorrespondenceMapSecondToFirst> > SubGraph;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor
+SubGraph	MCS.hpp	/^                  CachedCorrespondenceMapSecondToFirst> > SubGraph;$/;"	t	struct:boost::detail::unique_subgraph_interceptor
+SubGraphList	MCS.cc	/^      typedef std::vector<SubGraph> SubGraphList;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor	file:
+SubGraphList	MCS.cc	/^      typedef std::vector<SubGraph> SubGraphList;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+SubGraphList	MCS.cc	/^      typedef std::vector<SubGraph> SubGraphList;$/;"	t	struct:boost::detail::unique_subgraph_interceptor	file:
+SubGraphList	MCS.hpp	/^      typedef std::vector<SubGraph> SubGraphList;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor
+SubGraphList	MCS.hpp	/^      typedef std::vector<SubGraph> SubGraphList;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor
+SubGraphList	MCS.hpp	/^      typedef std::vector<SubGraph> SubGraphList;$/;"	t	struct:boost::detail::unique_subgraph_interceptor
+SubGraphTraits	MCS.cc	/^        VertexIndexMapFirst, VertexIndexMapSecond> SubGraphTraits;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor	file:
+SubGraphTraits	MCS.cc	/^        VertexIndexMapFirst, VertexIndexMapSecond> SubGraphTraits;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+SubGraphTraits	MCS.cc	/^        VertexIndexMapFirst, VertexIndexMapSecond> SubGraphTraits;$/;"	t	struct:boost::detail::unique_subgraph_interceptor	file:
+SubGraphTraits	MCS.hpp	/^        VertexIndexMapFirst, VertexIndexMapSecond> SubGraphTraits;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor
+SubGraphTraits	MCS.hpp	/^        VertexIndexMapFirst, VertexIndexMapSecond> SubGraphTraits;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor
+SubGraphTraits	MCS.hpp	/^        VertexIndexMapFirst, VertexIndexMapSecond> SubGraphTraits;$/;"	t	struct:boost::detail::unique_subgraph_interceptor
+Threshhod	CFG-diff.h	57;"	d
+TraceUse	CFG-diff.h	71;"	d
+U	CFG-diff.h	/^	Value *U;$/;"	m	struct:UserNode
+UnifiedFuncMap	Analyzer.h	/^	DenseMap<size_t, Function *>UnifiedFuncMap;$/;"	m	struct:GlobalContext
+UnifiedFuncSet	Analyzer.h	/^	set<Function *>UnifiedFuncSet;$/;"	m	struct:GlobalContext
+UpdateBB	CFG-diff.cc	/^void UpdateBB( int flag, vector<IdenticalInst> *identicalInsts, bbl_info rk){$/;"	f
+UpdateBB	CFG-diff.cc	/^void UpdateBB(bbl_info rl, bbl_info rs){$/;"	f
+UpdateDeletedBBlist	CFG-diff.cc	/^void UpdateDeletedBBlist(int basicblockIDk,std::vector<int> $/;"	f
+UpdateDeletedBBlistN	CFG-diff.cc	/^void UpdateDeletedBBlistN(int basicblockIDk,std::vector<int> $/;"	f
+UpdateVetex	CFG-diff.cc	/^void UpdateVetex(int basicblockID, std::vector<int> *remain_graph){$/;"	f
+UpdateVetex	CFG-diff.cc	/^void UpdateVetex(int basicblockID, std::vector<int> *remain_graph, set<int> *SScfg){$/;"	f
+UpdateVetex	CFG-diff.cc	/^void UpdateVetex(int basicblockIDk, std::queue<int> *kcommon_subgraph,$/;"	f
+UpdateVetex	CFG-diff.cc	/^void UpdateVetex(int basicblockIDk,std::queue<int> *kcommon_subgraph,$/;"	f
+UpdatedeletedSSlist	CFG-diff.cc	/^void UpdatedeletedSSlist(map<llvm::Instruction*, int> *deletedSSlist, map<llvm::Instruction*, int> *DeletedSSlists){$/;"	f
+UserGraph	CFG-diff.h	/^	UserGraph(Value *V, Value *StartUser, Element *Ele) {$/;"	f	struct:UserGraph
+UserGraph	CFG-diff.h	/^struct UserGraph {$/;"	s
+UserNode	CFG-diff.h	/^	UserNode(Value *U, Element *Ele) {$/;"	f	struct:UserNode
+UserNode	CFG-diff.h	/^struct UserNode {$/;"	s
+User_callback	CFG-diff.h	/^    User_callback(const GraphFirst& graph1, \/\/cfgK$/;"	f	struct:User_callback
+User_callback	CFG-diff.h	/^struct User_callback {$/;"	s
+Vertex	CFG-diff.h	/^typedef boost::graph_traits<Graph>::vertex_descriptor Vertex;$/;"	t
+VertexIndexMap	CFG-diff.h	/^typedef property_map<Graph, vertex_index_t>::type VertexIndexMap;$/;"	t
+VertexNameMap	CFG-diff.h	/^typedef property_map<Graph, vertex_name_t>::type VertexNameMap;$/;"	t
+VertexSizeFirst	CFG-diff.h	/^    typedef typename graph_traits<Graph>::vertices_size_type VertexSizeFirst;$/;"	t	struct:User_callback
+VertexSizeFirst	MCS.cc	/^        VertexSizeFirst;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor	file:
+VertexSizeFirst	MCS.cc	/^        VertexSizeFirst;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+VertexSizeFirst	MCS.cc	/^        VertexSizeFirst;$/;"	t	struct:boost::detail::unique_subgraph_interceptor	file:
+VertexSizeFirst	MCS.hpp	/^        VertexSizeFirst;$/;"	t	struct:boost::detail::maximum_subgraph_interceptor
+VertexSizeFirst	MCS.hpp	/^        VertexSizeFirst;$/;"	t	struct:boost::detail::unique_maximum_subgraph_interceptor
+VertexSizeFirst	MCS.hpp	/^        VertexSizeFirst;$/;"	t	struct:boost::detail::unique_subgraph_interceptor
+WARN	Common.h	26;"	d
+addSecurityCheck	SecurityChecks.cc	/^void SecurityChecksPass::addSecurityCheck(Value *SC, Value *Br,$/;"	f	class:SecurityChecksPass
+addSecurityCheck	SensitiveCheck.cc	/^void SensitiveChecksPass::addSecurityCheck(Value *SC, Value *Br,$/;"	f	class:SensitiveChecksPass
+alrm_signal	llvm-diff.cc	/^void alrm_signal(int signo)  $/;"	f
+always_equivalent	MCS.cc	/^  struct always_equivalent {$/;"	s	namespace:boost	file:
+always_equivalent	MCS.hpp	/^  struct always_equivalent {$/;"	s	namespace:boost
+bbl	CFG-diff.h	/^    llvm::BasicBlock* bbl;$/;"	m	struct:BBL_Info
+bbl	CFG-diff.h	/^}bbl;$/;"	t	typeref:struct:BBL_Info
+bblFeature	CFG-diff.cc	/^Feature bblFeature(vector<Instruction*> Instructions){$/;"	f
+bbl_NO	CFG-diff.h	/^    int bbl_NO;$/;"	m	struct:sensitive_item
+bbl_info	CFG-diff.h	/^typedef struct BBL_Info *bbl_info;$/;"	t	typeref:struct:BBL_Info
+boost	MCS.cc	/^namespace boost {$/;"	n	file:
+boost	MCS.hpp	/^namespace boost {$/;"	n
+callHash	Common.cc	/^size_t callHash(CallInst *CI) {$/;"	f
+can_extend_graph	MCS.cc	/^    bool can_extend_graph$/;"	f	namespace:boost::detail
+can_extend_graph	MCS.hpp	/^    bool can_extend_graph$/;"	f	namespace:boost::detail
+checkErrHandle	SecurityChecks.cc	/^void SecurityChecksPass::checkErrHandle(Function *F, $/;"	f	class:SecurityChecksPass
+checkErrHandle	SensitiveCheck.cc	/^void SensitiveChecksPass::checkErrHandle(Function *F, $/;"	f	class:SensitiveChecksPass
+checkErrReturn	SecurityChecks.cc	/^void SecurityChecksPass::checkErrReturn(Function *F, $/;"	f	class:SecurityChecksPass
+checkErrReturn	SensitiveCheck.cc	/^void SensitiveChecksPass::checkErrReturn(Function *F, $/;"	f	class:SensitiveChecksPass
+checkErrValueFlow	SecurityChecks.cc	/^void SecurityChecksPass::checkErrValueFlow($/;"	f	class:SecurityChecksPass
+checkErrValueFlow	SensitiveCheck.cc	/^void SensitiveChecksPass::checkErrValueFlow($/;"	f	class:SensitiveChecksPass
+child	CFG-diff.h	/^}child;$/;"	t	typeref:struct:Children
+childrennode	CFG-diff.h	/^    ChildrenNode childrennode;$/;"	m	struct:BBL_Info
+convertDotInName	Common.h	/^  static void convertDotInName(string &name) {$/;"	f	class:Helper
+convert_Mapbbl	CFG-diff.cc	/^Mapbbl convert_Mapbbl(Mapbbl m_KbasicBlockInfo){$/;"	f
+correspondence_map_first_to_second_type	MCS.cc	/^        correspondence_map_first_to_second_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits	file:
+correspondence_map_first_to_second_type	MCS.hpp	/^        correspondence_map_first_to_second_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits
+correspondence_map_second_to_first_type	MCS.cc	/^        correspondence_map_second_to_first_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits	file:
+correspondence_map_second_to_first_type	MCS.hpp	/^        correspondence_map_second_to_first_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits
+detail	MCS.cc	/^  namespace detail {$/;"	n	namespace:boost	file:
+detail	MCS.hpp	/^  namespace detail {$/;"	n	namespace:boost
+dl	Common.h	/^  const DataLayout &dl;$/;"	m	class:ModuleOracle
+doFinalization	Analyzer.h	/^	virtual bool doFinalization(llvm::Module *M)$/;"	f	class:IterativeModulePass
+doFinalization	CallGraph.cc	/^bool CallGraphPass::doFinalization(Module *M) {$/;"	f	class:CallGraphPass
+doFinalization	SecurityChecks.cc	/^bool SecurityChecksPass::doFinalization(Module *M) {$/;"	f	class:SecurityChecksPass
+doInitialization	Analyzer.h	/^	virtual bool doInitialization(llvm::Module *M)$/;"	f	class:IterativeModulePass
+doInitialization	CallGraph.cc	/^bool CallGraphPass::doInitialization(Module *M) {$/;"	f	class:CallGraphPass
+doInitialization	SecurityChecks.cc	/^bool SecurityChecksPass::doInitialization(Module *M) {$/;"	f	class:SecurityChecksPass
+doModulePass	Analyzer.h	/^	virtual bool doModulePass(llvm::Module *M)$/;"	f	class:IterativeModulePass
+doModulePass	CallGraph.cc	/^bool CallGraphPass::doModulePass(Module *M) {$/;"	f	class:CallGraphPass
+doModulePass	SecurityChecks.cc	/^bool SecurityChecksPass::doModulePass(Module *M) {$/;"	f	class:SecurityChecksPass
+doModulePass	SensitiveCheck.cc	/^bool SensitiveChecksPass::doModulePass(Module *M) {$/;"	f	class:SensitiveChecksPass
+dumpErrEdges	SecurityChecks.cc	/^void SecurityChecksPass::dumpErrEdges(EdgeErrMap &edgeErrMap) {$/;"	f	class:SecurityChecksPass
+dumpErrEdges	SensitiveCheck.cc	/^void SensitiveChecksPass::dumpErrEdges(EdgeErrMap &edgeErrMap) {$/;"	f	class:SensitiveChecksPass
+dump_buffer	CFG-diff.cc	/^int dump_buffer(char* content, string file_to_dump)$/;"	f
+dump_buffer	CFG-diff.cc	/^int dump_buffer(char* content, string file_to_dump, pthread_mutex_t *mutex)$/;"	f
+editDistDP	Common.cc	/^int editDistDP(string str1, string str2, int m, int n) $/;"	f
+editInstDistDPInst	Common.cc	/^double editInstDistDPInst(vector<string> longerSeq, vector<string> shorterSeq) $/;"	f
+editInstDistDPInst1	Common.cc	/^double editInstDistDPInst1(vector<string> longerSeq, vector<string> shorterSeq) $/;"	f
+editInstDistDPInst2	Common.cc	/^double editInstDistDPInst2(vector<string> longerSeq, vector<string> shorterSeq) $/;"	f
+ele	CFG-diff.h	/^	Element *ele;$/;"	m	struct:UserNode
+extractMacro	Common.cc	/^string extractMacro(string line, Instruction *I) {$/;"	f
+fill_membership_map	MCS.cc	/^  void fill_membership_map$/;"	f	namespace:boost
+fill_membership_map	MCS.hpp	/^  void fill_membership_map$/;"	f	namespace:boost
+filterIR	llvm-diff.cc	/^string filterIR(const string& s, const string& delimiter) {$/;"	f
+filterIR_dbg	llvm-diff.cc	/^string filterIR_dbg(string str, string filter) {$/;"	f
+filterIR_dbg_r	llvm-diff.cc	/^string filterIR_dbg_r(string str, string filter,string split) {$/;"	f
+findCalleesWithType	CallGraph.cc	/^void CallGraphPass::findCalleesWithType(CallInst *CI, FuncSet &S) {$/;"	f	class:CallGraphPass
+findErrorCodes	SecurityChecks.cc	/^void SecurityChecksPass::findErrorCodes(Function *F) {$/;"	f	class:SecurityChecksPass
+findErrorCodes	SensitiveCheck.cc	/^void SensitiveChecksPass::findErrorCodes(Function *F) {$/;"	f	class:SensitiveChecksPass
+findSameVariablesFrom	SecurityChecks.cc	/^void SecurityChecksPass::findSameVariablesFrom(Value *V, $/;"	f	class:SecurityChecksPass
+findSameVariablesFrom	SensitiveCheck.cc	/^void SensitiveChecksPass::findSameVariablesFrom(Value *V, $/;"	f	class:SensitiveChecksPass
+findSameVariablesFrom	tmp.cc	/^void PairAnalysisPass::findSameVariablesFrom(Function *F,$/;"	f	class:PairAnalysisPass
+first_index_t	CFG-diff.h	/^struct first_index_t {$/;"	s
+flagsCaches	CFG-diff.h	/^	std::set<uint8_t *>flagsCaches;$/;"	m	struct:UserNode
+funcHash	Common.cc	/^size_t funcHash(Function *F, bool withName) {$/;"	f
+getArgByNo	Common.cc	/^Argument *getArgByNo(Function *F, int8_t ArgNo) {$/;"	f
+getBits	Common.h	/^  uint64_t getBits() {$/;"	f	class:ModuleOracle
+getCalledFuncName	Common.cc	/^StringRef getCalledFuncName(Instruction *I) {$/;"	f
+getDataLayout	Common.h	/^  const DataLayout &getDataLayout() {$/;"	f	class:ModuleOracle
+getFileExt	CFG-diff.cc	/^string getFileExt(const string& s, const string& delimiter) {$/;"	f
+getFileName	Common.cc	/^string getFileName(DILocation *Loc, DISubprogram *SP) {$/;"	f
+getICmpCode	llvm-diff.cc	/^unsigned getICmpCode(const ICmpInst *ICI, bool InvertPred) $/;"	f
+getMacroInfo	Common.cc	/^string getMacroInfo(Value *V) {$/;"	f
+getMold	CFG-diff.cc	/^float getMold(const vector<int>& vec){   $/;"	f
+getPointerSize	Common.h	/^  uint64_t getPointerSize() {$/;"	f	class:ModuleOracle
+getPointerWidth	Common.h	/^  uint64_t getPointerWidth() {$/;"	f	class:ModuleOracle
+getSCBranch	Common.h	/^  Value *getSCBranch() { return SCBranch; }$/;"	f	class:SecurityCheck
+getSCheck	Common.h	/^  Value *getSCheck() { return SCheck; }$/;"	f	class:SecurityCheck
+getSCheckFileName	Common.h	/^  string getSCheckFileName() { return SCheckFileName; }$/;"	f	class:SecurityCheck
+getSCheckLineNo	Common.h	/^  unsigned getSCheckLineNo() { return SCheckLineNo; }$/;"	f	class:SecurityCheck
+getSimilarity	CFG-diff.cc	/^float getSimilarity(const vector<int>& lhs, const vector<int>& rhs){$/;"	f
+getSourceCodeInfo	Common.cc	/^void getSourceCodeInfo(Value *V, string &file,$/;"	f
+getSourceCodeLine	Common.cc	/^void getSourceCodeLine(Value *V, string &line) {$/;"	f
+getSourceFuncName	Common.cc	/^string getSourceFuncName(Instruction *I) {$/;"	f
+getSourceLine	Common.cc	/^string getSourceLine(string fn_str, unsigned lineno) {$/;"	f
+getSourceLocation	Common.cc	/^DILocation *getSourceLocation(Instruction *I) {$/;"	f
+getTargetLibraryInfo	Common.h	/^  TargetLibraryInfo &getTargetLibraryInfo() {$/;"	f	class:ModuleOracle
+getTypeOffset	Common.h	/^  uint64_t getTypeOffset(Type *type, unsigned idx) {$/;"	f	class:ModuleOracle
+getTypeSize	Common.h	/^  uint64_t getTypeSize(Type *ty) {$/;"	f	class:ModuleOracle
+getTypeWidth	Common.h	/^  uint64_t getTypeWidth(Type *ty) {$/;"	f	class:ModuleOracle
+getValueName	Common.h	/^  static string getValueName(Value *v) {$/;"	f	class:Helper
+getValueRepr	Common.h	/^  static string getValueRepr(Value *v) {$/;"	f	class:Helper
+getValueType	Common.h	/^  static string getValueType(Value *v) {$/;"	f	class:Helper
+graphMatch	CFG-diff.cc	/^void graphMatch()$/;"	f
+graph_type	MCS.cc	/^    typedef filtered_graph<Graph, keep_all, vertex_filter_type> graph_type;$/;"	t	struct:boost::membership_filtered_graph_traits	file:
+graph_type	MCS.hpp	/^    typedef filtered_graph<Graph, keep_all, vertex_filter_type> graph_type;$/;"	t	struct:boost::membership_filtered_graph_traits
+hashIdxHash	Common.cc	/^size_t hashIdxHash(size_t Hs, int Idx) {$/;"	f
+i	llvm-diff.cc	/^int i = 0;$/;"	v
+identifySecurityChecks	SecurityChecks.cc	/^void SecurityChecksPass::identifySecurityChecks(Function *F, $/;"	f	class:SecurityChecksPass
+identifySecurityChecks	SensitiveCheck.cc	/^void SensitiveChecksPass::identifySecurityChecks(Function *F, $/;"	f	class:SensitiveChecksPass
+identifySensitiveChecks	SensitiveCheck.cc	/^void SensitiveChecksPass::identifySensitiveChecks(Function *F, $/;"	f	class:SensitiveChecksPass
+inferErrBranch	SecurityChecks.cc	/^int SecurityChecksPass::inferErrBranch(Instruction *Cond) {$/;"	f	class:SecurityChecksPass
+inferErrBranch	SensitiveCheck.cc	/^int SensitiveChecksPass::inferErrBranch(Instruction *Cond) {$/;"	f	class:SensitiveChecksPass
+inst	CFG-diff.h	/^    llvm::Instruction *inst;$/;"	m	struct:sensitive_item
+involvedBBs	CFG-diff.h	/^	BBMap involvedBBs;$/;"	m	struct:UserGraph
+isConstant	Common.cc	/^bool isConstant(Value *V) {$/;"	f
+isReintPointerType	Common.h	/^  bool isReintPointerType(Type *ty) {$/;"	f	class:ModuleOracle
+isValueErrno	SecurityChecks.cc	/^bool SecurityChecksPass::isValueErrno(Value *V, Function *F) {$/;"	f	class:SecurityChecksPass
+isValueErrno	SensitiveCheck.cc	/^bool SensitiveChecksPass::isValueErrno(Value *V, Function *F) {$/;"	f	class:SensitiveChecksPass
+is_errno	SecurityChecks.cc	24;"	d	file:
+is_errno	SensitiveCheck.cc	24;"	d	file:
+kind	CFG-diff.h	/^    typedef vertex_property_tag kind;$/;"	t	struct:first_index_t
+listBCFilesRecursively	llvm-diff.cc	/^void listBCFilesRecursively(char *basePath)$/;"	f
+m_FGlobalCtx	CFG-diff.h	/^    const FGlobalCTX& m_FGlobalCtx;$/;"	m	struct:User_callback
+m_FbasicBlockInfo	CFG-diff.h	/^    const FBBLINFO& m_FbasicBlockInfo;$/;"	m	struct:User_callback
+m_KGlobalCtx	CFG-diff.h	/^    const KGlobalCTX& m_KGlobalCtx;$/;"	m	struct:User_callback
+m_KbasicBlockInfo	CFG-diff.h	/^    const KBBLINFO& m_KbasicBlockInfo;$/;"	m	struct:User_callback
+m_bcname	CFG-diff.h	/^    const BCName& m_bcname;$/;"	m	struct:User_callback
+m_funcname	CFG-diff.h	/^    const FuncName& m_funcname;$/;"	m	struct:User_callback
+m_graph1	CFG-diff.h	/^    const GraphFirst& m_graph1;$/;"	m	struct:User_callback
+m_graph1	MCS.cc	/^      const GraphFirst& m_graph1;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_graph1	MCS.cc	/^      const GraphFirst& m_graph1;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_graph1	MCS.cc	/^      const GraphFirst& m_graph1;$/;"	m	struct:boost::detail::unique_subgraph_interceptor	file:
+m_graph1	MCS.hpp	/^      const GraphFirst& m_graph1;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_graph1	MCS.hpp	/^      const GraphFirst& m_graph1;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_graph1	MCS.hpp	/^      const GraphFirst& m_graph1;$/;"	m	struct:boost::detail::unique_subgraph_interceptor
+m_graph2	CFG-diff.h	/^    const GraphSecond& m_graph2;$/;"	m	struct:User_callback
+m_graph2	MCS.cc	/^      const GraphFirst& m_graph2;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_graph2	MCS.cc	/^      const GraphFirst& m_graph2;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_graph2	MCS.cc	/^      const GraphFirst& m_graph2;$/;"	m	struct:boost::detail::unique_subgraph_interceptor	file:
+m_graph2	MCS.hpp	/^      const GraphFirst& m_graph2;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_graph2	MCS.hpp	/^      const GraphFirst& m_graph2;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_graph2	MCS.hpp	/^      const GraphFirst& m_graph2;$/;"	m	struct:boost::detail::unique_subgraph_interceptor
+m_largest_size_so_far	MCS.cc	/^      shared_ptr<VertexSizeFirst> m_largest_size_so_far;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_largest_size_so_far	MCS.cc	/^      shared_ptr<VertexSizeFirst> m_largest_size_so_far;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_largest_size_so_far	MCS.hpp	/^      shared_ptr<VertexSizeFirst> m_largest_size_so_far;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_largest_size_so_far	MCS.hpp	/^      shared_ptr<VertexSizeFirst> m_largest_size_so_far;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_local_msg	CFG-diff.h	/^    const LocalMessage& m_local_msg;$/;"	m	struct:User_callback
+m_max_subgraph_size	CFG-diff.h	/^    VertexSizeFirst m_max_subgraph_size;$/;"	m	struct:User_callback
+m_mutex	CFG-diff.h	/^    const Mutex& m_mutex;$/;"	m	struct:User_callback
+m_property_map1	MCS.cc	/^    const PropertyMapFirst m_property_map1;$/;"	m	struct:boost::property_map_equivalent	file:
+m_property_map1	MCS.hpp	/^    const PropertyMapFirst m_property_map1;$/;"	m	struct:boost::property_map_equivalent
+m_property_map2	MCS.cc	/^    const PropertyMapSecond m_property_map2;$/;"	m	struct:boost::property_map_equivalent	file:
+m_property_map2	MCS.hpp	/^    const PropertyMapSecond m_property_map2;$/;"	m	struct:boost::property_map_equivalent
+m_subgraphs	MCS.cc	/^      shared_ptr<SubGraphList> m_subgraphs;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_subgraphs	MCS.cc	/^      shared_ptr<SubGraphList> m_subgraphs;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_subgraphs	MCS.cc	/^      shared_ptr<SubGraphList> m_subgraphs;$/;"	m	struct:boost::detail::unique_subgraph_interceptor	file:
+m_subgraphs	MCS.hpp	/^      shared_ptr<SubGraphList> m_subgraphs;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_subgraphs	MCS.hpp	/^      shared_ptr<SubGraphList> m_subgraphs;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_subgraphs	MCS.hpp	/^      shared_ptr<SubGraphList> m_subgraphs;$/;"	m	struct:boost::detail::unique_subgraph_interceptor
+m_user_callback	MCS.cc	/^      SubGraphCallback m_user_callback;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_user_callback	MCS.cc	/^      SubGraphCallback m_user_callback;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_user_callback	MCS.cc	/^      SubGraphCallback m_user_callback;$/;"	m	struct:boost::detail::unique_subgraph_interceptor	file:
+m_user_callback	MCS.hpp	/^      SubGraphCallback m_user_callback;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_user_callback	MCS.hpp	/^      SubGraphCallback m_user_callback;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_user_callback	MCS.hpp	/^      SubGraphCallback m_user_callback;$/;"	m	struct:boost::detail::unique_subgraph_interceptor
+m_vindex_map1	MCS.cc	/^      const VertexIndexMapFirst m_vindex_map1;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_vindex_map1	MCS.cc	/^      const VertexIndexMapFirst m_vindex_map1;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_vindex_map1	MCS.cc	/^      const VertexIndexMapFirst m_vindex_map1;$/;"	m	struct:boost::detail::unique_subgraph_interceptor	file:
+m_vindex_map1	MCS.hpp	/^      const VertexIndexMapFirst m_vindex_map1;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_vindex_map1	MCS.hpp	/^      const VertexIndexMapFirst m_vindex_map1;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_vindex_map1	MCS.hpp	/^      const VertexIndexMapFirst m_vindex_map1;$/;"	m	struct:boost::detail::unique_subgraph_interceptor
+m_vindex_map2	MCS.cc	/^      const VertexIndexMapSecond m_vindex_map2;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor	file:
+m_vindex_map2	MCS.cc	/^      const VertexIndexMapSecond m_vindex_map2;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor	file:
+m_vindex_map2	MCS.cc	/^      const VertexIndexMapSecond m_vindex_map2;$/;"	m	struct:boost::detail::unique_subgraph_interceptor	file:
+m_vindex_map2	MCS.hpp	/^      const VertexIndexMapSecond m_vindex_map2;$/;"	m	struct:boost::detail::maximum_subgraph_interceptor
+m_vindex_map2	MCS.hpp	/^      const VertexIndexMapSecond m_vindex_map2;$/;"	m	struct:boost::detail::unique_maximum_subgraph_interceptor
+m_vindex_map2	MCS.hpp	/^      const VertexIndexMapSecond m_vindex_map2;$/;"	m	struct:boost::detail::unique_subgraph_interceptor
+main	Analyzer.cc	/^int main(int argc, char **argv) {$/;"	f
+make_membership_filtered_graph	MCS.cc	/^  make_membership_filtered_graph$/;"	f	namespace:boost
+make_membership_filtered_graph	MCS.hpp	/^  make_membership_filtered_graph$/;"	f	namespace:boost
+make_property_map_equivalent	MCS.cc	/^  make_property_map_equivalent$/;"	f	namespace:boost
+make_property_map_equivalent	MCS.hpp	/^  make_property_map_equivalent$/;"	f	namespace:boost
+markAllEdgesErrFlag	SecurityChecks.cc	/^bool SecurityChecksPass::markAllEdgesErrFlag(Function *F, BBErrMap &bbErrMap, $/;"	f	class:SecurityChecksPass
+markAllEdgesErrFlag	SensitiveCheck.cc	/^bool SensitiveChecksPass::markAllEdgesErrFlag(Function *F, BBErrMap &bbErrMap, $/;"	f	class:SensitiveChecksPass
+markBBErr	SecurityChecks.cc	/^void SecurityChecksPass::markBBErr(BasicBlock *BB, $/;"	f	class:SecurityChecksPass
+markBBErr	SensitiveCheck.cc	/^void SensitiveChecksPass::markBBErr(BasicBlock *BB, $/;"	f	class:SensitiveChecksPass
+markEdgesToErrReturn	SecurityChecks.cc	/^void SecurityChecksPass::markEdgesToErrReturn(BasicBlock *BB, $/;"	f	class:SecurityChecksPass
+markEdgesToErrReturn	SensitiveCheck.cc	/^void SensitiveChecksPass::markEdgesToErrReturn(BasicBlock *BB, $/;"	f	class:SensitiveChecksPass
+maximum_subgraph_interceptor	MCS.cc	/^      maximum_subgraph_interceptor(const GraphFirst& graph1,$/;"	f	struct:boost::detail::maximum_subgraph_interceptor
+maximum_subgraph_interceptor	MCS.cc	/^    struct maximum_subgraph_interceptor {$/;"	s	namespace:boost::detail	file:
+maximum_subgraph_interceptor	MCS.hpp	/^      maximum_subgraph_interceptor(const GraphFirst& graph1,$/;"	f	struct:boost::detail::maximum_subgraph_interceptor
+maximum_subgraph_interceptor	MCS.hpp	/^    struct maximum_subgraph_interceptor {$/;"	s	namespace:boost::detail
+mayReturnErr	SecurityChecks.cc	/^bool SecurityChecksPass::mayReturnErr(Function *F) {$/;"	f	class:SecurityChecksPass
+mayReturnErr	SensitiveCheck.cc	/^bool SensitiveChecksPass::mayReturnErr(Function *F) {$/;"	f	class:SensitiveChecksPass
+mcgregor_common_subgraph_traits	MCS.cc	/^    struct mcgregor_common_subgraph_traits {$/;"	s	namespace:boost::detail	file:
+mcgregor_common_subgraph_traits	MCS.hpp	/^    struct mcgregor_common_subgraph_traits {$/;"	s	namespace:boost::detail
+mcgregor_common_subgraphs	MCS.cc	/^  void mcgregor_common_subgraphs$/;"	f	namespace:boost
+mcgregor_common_subgraphs	MCS.hpp	/^  void mcgregor_common_subgraphs$/;"	f	namespace:boost
+mcgregor_common_subgraphs_internal	MCS.cc	/^    bool mcgregor_common_subgraphs_internal$/;"	f	namespace:boost::detail
+mcgregor_common_subgraphs_internal	MCS.hpp	/^    bool mcgregor_common_subgraphs_internal$/;"	f	namespace:boost::detail
+mcgregor_common_subgraphs_internal_init	MCS.cc	/^    inline void mcgregor_common_subgraphs_internal_init$/;"	f	namespace:boost::detail
+mcgregor_common_subgraphs_internal_init	MCS.hpp	/^    inline void mcgregor_common_subgraphs_internal_init$/;"	f	namespace:boost::detail
+mcgregor_common_subgraphs_maximum	MCS.cc	/^  void mcgregor_common_subgraphs_maximum$/;"	f	namespace:boost
+mcgregor_common_subgraphs_maximum	MCS.hpp	/^  void mcgregor_common_subgraphs_maximum$/;"	f	namespace:boost
+mcgregor_common_subgraphs_maximum_unique	MCS.cc	/^  void mcgregor_common_subgraphs_maximum_unique$/;"	f	namespace:boost
+mcgregor_common_subgraphs_maximum_unique	MCS.hpp	/^  void mcgregor_common_subgraphs_maximum_unique$/;"	f	namespace:boost
+mcgregor_common_subgraphs_unique	MCS.cc	/^  void mcgregor_common_subgraphs_unique$/;"	f	namespace:boost
+mcgregor_common_subgraphs_unique	MCS.hpp	/^  void mcgregor_common_subgraphs_unique$/;"	f	namespace:boost
+membership_filtered_graph_traits	MCS.cc	/^  struct membership_filtered_graph_traits {$/;"	s	namespace:boost	file:
+membership_filtered_graph_traits	MCS.hpp	/^  struct membership_filtered_graph_traits {$/;"	s	namespace:boost
+mergeFlag	SecurityChecks.cc	/^void SecurityChecksPass::mergeFlag(int &errFlag, int &newFlag) {$/;"	f	class:SecurityChecksPass
+mergeFlag	SensitiveCheck.cc	/^void SensitiveChecksPass::mergeFlag(int &errFlag, int &newFlag) {$/;"	f	class:SensitiveChecksPass
+min	Common.cc	/^int min(int x, int y, int z) $/;"	f
+mindistance	Common.cc	/^double mindistance(double a,double b,double c)  $/;"	f
+mutex	CFG-diff.h	/^   pthread_mutex_t *mutex;$/;"	m	struct:CmpParas
+nextUserNodes	CFG-diff.h	/^	std::set<UserNode *>nextUserNodes;$/;"	m	struct:UserNode
+normalizeBB	llvm-diff.cc	/^string normalizeBB(string str) {$/;"	f
+offset	CFG-diff.h	/^	int offset;$/;"	m	struct:Element
+operator ()	CFG-diff.h	/^    bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:User_callback
+operator ()	MCS.cc	/^      bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:boost::detail::maximum_subgraph_interceptor
+operator ()	MCS.cc	/^      bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:boost::detail::unique_maximum_subgraph_interceptor
+operator ()	MCS.cc	/^      bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:boost::detail::unique_subgraph_interceptor
+operator ()	MCS.cc	/^    bool operator()(const ItemFirst item1, const ItemSecond item2) {$/;"	f	struct:boost::property_map_equivalent
+operator ()	MCS.cc	/^    bool operator()(const ItemFirst&, const ItemSecond&) {$/;"	f	struct:boost::always_equivalent
+operator ()	MCS.hpp	/^      bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:boost::detail::maximum_subgraph_interceptor
+operator ()	MCS.hpp	/^      bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:boost::detail::unique_maximum_subgraph_interceptor
+operator ()	MCS.hpp	/^      bool operator()(CorrespondenceMapFirstToSecond correspondence_map_1_to_2,$/;"	f	struct:boost::detail::unique_subgraph_interceptor
+operator ()	MCS.hpp	/^    bool operator()(const ItemFirst item1, const ItemSecond item2) {$/;"	f	struct:boost::property_map_equivalent
+operator ()	MCS.hpp	/^    bool operator()(const ItemFirst&, const ItemSecond&) {$/;"	f	struct:boost::always_equivalent
+operator <	Common.h	/^	friend bool operator< (const SecurityCheck &SC1, const SecurityCheck &SC2) {$/;"	f	class:SecurityCheck
+output_subgraphs	MCS.cc	/^      void output_subgraphs() {$/;"	f	struct:boost::detail::maximum_subgraph_interceptor
+output_subgraphs	MCS.cc	/^      void output_subgraphs() {$/;"	f	struct:boost::detail::unique_maximum_subgraph_interceptor
+output_subgraphs	MCS.hpp	/^      void output_subgraphs() {$/;"	f	struct:boost::detail::maximum_subgraph_interceptor
+output_subgraphs	MCS.hpp	/^      void output_subgraphs() {$/;"	f	struct:boost::detail::unique_maximum_subgraph_interceptor
+parent	CFG-diff.h	/^}parent;$/;"	t	typeref:struct:Parent
+parentEle	CFG-diff.h	/^	Element *parentEle;$/;"	m	struct:Element
+parentnode	CFG-diff.h	/^    ParentNode parentnode;$/;"	m	struct:BBL_Info
+pfunc	llvm-diff.h	18;"	d
+potencial_delete_security_operation	llvm-diff.cc	/^int potencial_delete_security_operation = 0;$/;"	v
+preUserNodes	CFG-diff.h	/^	std::set<UserNode *>preUserNodes;$/;"	m	struct:UserNode
+printSourceCodeInfo	Common.cc	/^void printSourceCodeInfo(Function *F) {$/;"	f
+printSourceCodeInfo	Common.cc	/^void printSourceCodeInfo(Value *V) {$/;"	f
+printSourceCodeInfoInst	Common.cc	/^void printSourceCodeInfoInst(Instruction *I) {$/;"	f
+property_map_equivalent	MCS.cc	/^    property_map_equivalent(const PropertyMapFirst property_map1,$/;"	f	struct:boost::property_map_equivalent
+property_map_equivalent	MCS.cc	/^  struct property_map_equivalent {$/;"	s	namespace:boost	file:
+property_map_equivalent	MCS.hpp	/^    property_map_equivalent(const PropertyMapFirst property_map1,$/;"	f	struct:boost::property_map_equivalent
+property_map_equivalent	MCS.hpp	/^  struct property_map_equivalent {$/;"	s	namespace:boost
+recurMarkEdgesFromBlock	SecurityChecks.cc	/^void SecurityChecksPass::recurMarkEdgesFromBlock(CFGEdge &CE, int flag, $/;"	f	class:SecurityChecksPass
+recurMarkEdgesFromBlock	SensitiveCheck.cc	/^void SensitiveChecksPass::recurMarkEdgesFromBlock(CFGEdge &CE, int flag, $/;"	f	class:SensitiveChecksPass
+recurMarkEdgesToBlock	SecurityChecks.cc	/^void SecurityChecksPass::recurMarkEdgesToBlock(CFGEdge &CE, int flag, $/;"	f	class:SecurityChecksPass
+recurMarkEdgesToBlock	SensitiveCheck.cc	/^void SensitiveChecksPass::recurMarkEdgesToBlock(CFGEdge &CE, int flag, $/;"	f	class:SensitiveChecksPass
+recurMarkEdgesToErrHandle	SecurityChecks.cc	/^void SecurityChecksPass::recurMarkEdgesToErrHandle(BasicBlock *BB, $/;"	f	class:SecurityChecksPass
+recurMarkEdgesToErrHandle	SensitiveCheck.cc	/^void SensitiveChecksPass::recurMarkEdgesToErrHandle(BasicBlock *BB, $/;"	f	class:SensitiveChecksPass
+recurMarkEdgesToErrReturn	SecurityChecks.cc	/^void SecurityChecksPass::recurMarkEdgesToErrReturn(BasicBlock *BB, $/;"	f	class:SecurityChecksPass
+recurMarkEdgesToErrReturn	SensitiveCheck.cc	/^void SensitiveChecksPass::recurMarkEdgesToErrReturn(BasicBlock *BB, $/;"	f	class:SensitiveChecksPass
+refHierarchy	CFG-diff.h	/^	int refHierarchy;$/;"	m	struct:Element
+replace	CFG-diff.h	/^        int replace;$/;"	m	struct:replaceresult
+replace_all	llvm-diff.cc	/^struct replaceresult replace_all(string& str, string& old_value, string& new_value)   $/;"	f
+replaceresult	CFG-diff.h	/^struct replaceresult{$/;"	s
+run	Analyzer.cc	/^void IterativeModulePass::run(ModuleList &modules) {$/;"	f	class:IterativeModulePass
+scheck	llvm-diff.h	15;"	d
+searchQueue	CFG-diff.cc	/^void searchQueue(std::queue<int>  q){$/;"	f
+search_Mapbbl	CFG-diff.cc	/^bbl_info search_Mapbbl(Mapbbl m_KbasicBlockInfo, int common_vetex){$/;"	f
+sen_list	CFG-diff.h	/^    struct sensitive_item sen_list[200];$/;"	m	struct:sensitive_info_of_function	typeref:struct:sensitive_info_of_function::sensitive_item
+sensitive_info_of_function	CFG-diff.h	/^typedef struct sensitive_info_of_function{$/;"	s
+sensitive_item	CFG-diff.h	/^struct sensitive_item{$/;"	s
+sigFuncsMap	Analyzer.h	/^	DenseMap<size_t, FuncSet>sigFuncsMap;$/;"	m	struct:GlobalContext
+silbling	CFG-diff.h	/^}silbling;$/;"	t	typeref:struct:Silibing
+silibingnode	CFG-diff.h	/^    SilbingNode silibingnode;$/;"	m	struct:BBL_Info
+size	CFG-diff.h	/^	unsigned size;$/;"	m	struct:Element
+size	CFG-diff.h	/^    int size;$/;"	m	struct:sensitive_info_of_function
+splitstring	llvm-diff.cc	/^string splitstring(const string& s, const string& delimiter) {$/;"	f
+str	CFG-diff.h	/^        string str;$/;"	m	struct:replaceresult
+tli	Common.h	/^  TargetLibraryInfo tli;$/;"	m	class:ModuleOracle
+trimPathSlash	Common.cc	/^bool trimPathSlash(string &path, int slash) {$/;"	f
+type	CFG-diff.h	/^    int type;$/;"	m	struct:sensitive_item
+typeConfineMap	CallGraph.h	/^		static std::unordered_map<size_t, set<size_t>>typeConfineMap;$/;"	m	class:CallGraphPass
+typeEscapeSet	CallGraph.h	/^		static set<size_t>typeEscapeSet;$/;"	m	class:CallGraphPass
+typeFuncsMap	CallGraph.h	/^		static DenseMap<size_t, FuncSet>typeFuncsMap;$/;"	m	class:CallGraphPass
+typeHash	Common.cc	/^size_t typeHash(Type *Ty) {$/;"	f
+typeIdxHash	Common.cc	/^size_t typeIdxHash(Type *Ty, int Idx) {$/;"	f
+typeTransitMap	CallGraph.h	/^		static std::unordered_map<size_t, set<size_t>>typeTransitMap;$/;"	m	class:CallGraphPass
+typedValue	Common.h	/^  void typedValue(Value *val) {$/;"	f	class:Dumper
+uintial	llvm-diff.h	16;"	d
+ulock	llvm-diff.h	17;"	d
+unique_maximum_subgraph_interceptor	MCS.cc	/^      unique_maximum_subgraph_interceptor(const GraphFirst& graph1,$/;"	f	struct:boost::detail::unique_maximum_subgraph_interceptor
+unique_maximum_subgraph_interceptor	MCS.cc	/^    struct unique_maximum_subgraph_interceptor {$/;"	s	namespace:boost::detail	file:
+unique_maximum_subgraph_interceptor	MCS.hpp	/^      unique_maximum_subgraph_interceptor(const GraphFirst& graph1,$/;"	f	struct:boost::detail::unique_maximum_subgraph_interceptor
+unique_maximum_subgraph_interceptor	MCS.hpp	/^    struct unique_maximum_subgraph_interceptor {$/;"	s	namespace:boost::detail
+unique_subgraph_interceptor	MCS.cc	/^      unique_subgraph_interceptor(const GraphFirst& graph1,$/;"	f	struct:boost::detail::unique_subgraph_interceptor
+unique_subgraph_interceptor	MCS.cc	/^    struct unique_subgraph_interceptor {$/;"	s	namespace:boost::detail	file:
+unique_subgraph_interceptor	MCS.hpp	/^      unique_subgraph_interceptor(const GraphFirst& graph1,$/;"	f	struct:boost::detail::unique_subgraph_interceptor
+unique_subgraph_interceptor	MCS.hpp	/^    struct unique_subgraph_interceptor {$/;"	s	namespace:boost::detail
+unknownOffset	CFG-diff.h	/^	bool unknownOffset;$/;"	m	struct:Element
+unrollLoops	CallGraph.cc	/^void CallGraphPass::unrollLoops(Function *F) {$/;"	f	class:CallGraphPass
+unrollLoops_k	llvm-diff.cc	/^void unrollLoops_k(Function *F) {$/;"	f
+unrollLoops_l	llvm-diff.cc	/^void unrollLoops_l(Function *F) {$/;"	f
+updateHandleFlag	SecurityChecks.cc	/^void SecurityChecksPass::updateHandleFlag(int &errFlag, int &newFlag) {$/;"	f	class:SecurityChecksPass
+updateHandleFlag	SensitiveCheck.cc	/^void SensitiveChecksPass::updateHandleFlag(int &errFlag, int &newFlag) {$/;"	f	class:SensitiveChecksPass
+updateReturnFlag	SecurityChecks.cc	/^void SecurityChecksPass::updateReturnFlag(int &errFlag, int &newFlag) {$/;"	f	class:SecurityChecksPass
+updateReturnFlag	SensitiveCheck.cc	/^void SensitiveChecksPass::updateReturnFlag(int &errFlag, int &newFlag) {$/;"	f	class:SensitiveChecksPass
+usedValues	CFG-diff.h	/^	std::set<Value *> usedValues;$/;"	m	struct:UserGraph
+userNodes	CFG-diff.h	/^	std::list<UserNode *>userNodes;$/;"	m	struct:BBNode
+valueName	Common.h	/^  void valueName(Value *val) {$/;"	f	class:Dumper
+vertex_filter_type	MCS.cc	/^    typedef property_map_filter<MembershipMap> vertex_filter_type;$/;"	t	struct:boost::membership_filtered_graph_traits	file:
+vertex_filter_type	MCS.hpp	/^    typedef property_map_filter<MembershipMap> vertex_filter_type;$/;"	t	struct:boost::membership_filtered_graph_traits
+vertex_first_type	MCS.cc	/^      typedef typename graph_traits<GraphFirst>::vertex_descriptor vertex_first_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits	file:
+vertex_first_type	MCS.hpp	/^      typedef typename graph_traits<GraphFirst>::vertex_descriptor vertex_first_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits
+vertex_iter	CFG-diff.h	/^typedef graph_traits<Graph>::vertex_iterator vertex_iter;$/;"	t
+vertex_second_type	MCS.cc	/^      typedef typename graph_traits<GraphSecond>::vertex_descriptor vertex_second_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits	file:
+vertex_second_type	MCS.hpp	/^      typedef typename graph_traits<GraphSecond>::vertex_descriptor vertex_second_type;$/;"	t	struct:boost::detail::mcgregor_common_subgraph_traits
+~Dumper	Common.h	/^  ~Dumper() {}$/;"	f	class:Dumper
+~ModuleOracle	Common.h	/^  ~ModuleOracle() {}$/;"	f	class:ModuleOracle
+~SecurityCheck	Common.h	/^  ~SecurityCheck() {$/;"	f	class:SecurityCheck
+~UserGraph	CFG-diff.h	/^	~UserGraph() {$/;"	f	struct:UserGraph
